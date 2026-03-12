@@ -263,7 +263,10 @@ img {
 /*======== HOME =============*/
 
 .home__container{
-  gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .home__content{
@@ -289,7 +292,9 @@ img {
 }
 
 .home__img{
-  justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home__blob{
@@ -305,6 +310,7 @@ img {
 
 .home__data{
   grid-column: 2/3;
+   margin-left: -20px;
 }
 
 .home__title{
@@ -711,10 +717,11 @@ img {
 .portfolio__content {
   padding: 0 1.5rem;
 }
-.portfolio__img {
-  width: 310px;
-  border-radius: 0.5rem;
-  justify-self: center;
+.profile-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 .portfolio__title {
   font-size: var(--h3-font-size);
